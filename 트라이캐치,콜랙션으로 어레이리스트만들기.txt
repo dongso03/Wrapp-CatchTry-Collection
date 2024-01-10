@@ -1,0 +1,35 @@
+Wrapper
+
+Integer box = 100; >> 객체로 자동 포장된다.
+
+int pribitive = box.intValue(); >>반대로
+
+int parse = Integer.parseInt("456");
+	System.out.println(parse +100);
+		
+	int ext = Integer.parseInt("zzz");<<<<
+
+Exception in thread "main" java.lang.NumberFormatException: For input string: "zzz"
+엑셉션발생
+
+Integer i1 = Integer.valueOf(10);
+i1 = i1+50; >>새참조를해서 참조변경이 일어난것
+
+try catch
+
+InputMismatchException
+ArithmeticException
+등등 예외발생시 
+트라이 캐치문으로 정상흐름으로 돌릴수있다.
+
+트라이문안에서 변수선언시 지역변수이기때문에 바깥에서 사용 x
+
+
+collection
+ArrayList<String> list = new ArrayList<String>();
+꺽새 제네릭이라고 부른다
+Iterator<String> iter = strs.iterator();
+while (iter.hasNext()) {
+System.out.println(iter.next());
+이터레이터가 가져올게있는지보고 있으면 다음넥스트를 가져오는방식
+
